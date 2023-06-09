@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |      |      |      |      |      |                    |      |      |      |      |      |   =  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |VLMUP |VLMDN | MUTE |      |      |-------.    ,-------|      |      | HOME |PageUp|      |   \  |
+ * |      |VLMUP |VLMDN | MUTE |      |      |-------.    ,-------|LEFT  |DOWN  |UP    |RIGHT |      |      |
  * |------+------+------+------+------+------|BRGHTDN|    |BRGHTUP|------+------+------+------+------+------|
- * |LShift|      |      |      |      |      |-------|    |-------|      |      |  END |PageDn|      |RShift|
+ * |LShift|      |      |      |      |      |-------|    |-------|      |      |      |      |  \   |RShift|
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   |LAlt  | LGUI |LOWER | /Space  /       \Enter \  |BackSP| RGUI | RAlt |
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -54,8 +54,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT(
   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,                     KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_EQL,
-  XXXXXXX, KC_VOLU, KC_VOLD, KC_MUTE, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, KC_HOME, KC_PGUP, XXXXXXX, KC_BSLS,
-  KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, KC_END, KC_PGDN, XXXXXXX, KC_RSFT,
+  XXXXXXX, KC_VOLU, KC_VOLD, KC_MUTE, XXXXXXX, XXXXXXX,                   KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, XXXXXXX, XXXXXXX,
+  KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BSLS, KC_RSFT,
                             KC_LALT, KC_LGUI, LOWER, KC_SPC, KC_ENT, KC_BSPC, KC_RGUI, KC_RALT
 ),
 /* RAISE
